@@ -33,34 +33,50 @@ It covers all foundational vector space techniques, culminating in semantic sear
 
 ## 💻 Environment Setup
 
-This project uses Python 3 and common data science libraries. A `requirements.txt` file is provided for easy setup.
+Follow these steps to set up and run the project in an isolated environment.
 
-### 🔧 To install dependencies:
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/IRBasics-VectorSpaceProximity-workshop.git
+cd IRBasics-VectorSpaceProximity-workshop
+```
+
+### Step 2: Create a Virtual Environment (Recommended)
+
+```bash
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies from `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Or manually install core packages:
+This will automatically install:
+- scikit-learn==1.4.1  
+- pandas==2.2.1  
+- numpy==1.26.4  
+- nltk==3.8.1
 
-```bash
-pip install scikit-learn pandas numpy nltk
-```
-
-### 🧾 `requirements.txt` contents:
-```
-scikit-learn==1.4.1
-pandas==2.2.1
-numpy==1.26.4
-nltk==3.8.1
-```
-
-### 📝 NLTK Setup:
-Inside the notebook, run this once to download stopwords:
+### Step 4: Download NLTK Resources
 
 ```python
 import nltk
 nltk.download('stopwords')
+```
+
+You're now ready to run the notebook:
+
+```bash
+jupyter notebook IRBasics_VectorSpaceProximity.ipynb
 ```
 
 ---
